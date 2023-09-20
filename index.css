@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.head-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  margin: 0px auto;
+  width: 100%;
+  padding: 1.5rem 4rem;
+}
+.head-container-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.5rem;
+  position: relative;
+}
+.contact-header {
+  display: flex;
+}
+.contact-header a {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.big-header {
+  display: block;
+  max-width: 20%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.big-header > svg {
+  fill: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 5rem;
+}
+/* @media screen and (min-width: 1024px) .sidenav {
+  padding: 5rem;
+} */
+.sidenav a {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  line-height: 1.5rem;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 2rem;
+  margin-right: 50px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+.image-container-content {
+  display: flex;
+  flex-direction: row;
+}
+.image-container-content img {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+}
+.iamge-text {
+  color: #000;
+  line-height: 1.25;
+}
