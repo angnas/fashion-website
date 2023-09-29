@@ -277,12 +277,34 @@ body {
   height: 9rem;
 }
 
-.link>span {
+.link span {
   display: inline-block;
   overflow: hidden;
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link span:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .linkwrraper {
